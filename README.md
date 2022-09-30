@@ -7,10 +7,11 @@
 4. run `python audioWhisper.py`
 
 ## Command-line flags
-|      --flags          |      Parameters         |  Default Value  |      Description                                                                                       |
-|:---------------------:|:-----------------------:|:---------------:|:------------------------------------------------------------------------------------------------------:|
-|`--devices`            |  true, false            |  false          | To print all available devices                                                                         |
-|`--model`              |  model name             |  small          | Select model list. refer [here](https://github.com/openai/whisper#available-models-and-languages)      |
-|`--task`               |  transcribe, translate  |  transcribe     | Choose between transcribe the audio or to translate the audio to English                               |
-|`--device_index`       | index of output device  |  2              | Choose the output device to listen to and transcribe the audio from this device                        |
-
+|      --flags          |  Default Value  |      Description                                                                                       |
+|:---------------------:|:---------------:|:------------------------------------------------------------------------------------------------------:|
+|`--device              |  false          | To print all available devices                                                                         |
+|`--model`              |  small          | Select model list. refer [here](https://github.com/openai/whisper#available-models-and-languages)      |
+|`--task`               |  transcribe     | Choose between transcribe the audio or to translate the audio to English                               |
+|`--device_index`       |  2              | Choose the output device to listen to and transcribe the audio from this device                        |
+|`--channel`            |  2              | Number of channels of the output device                                                                |
+|`--rate`               | 44100           | Sampling rate of the output device                                                                     |

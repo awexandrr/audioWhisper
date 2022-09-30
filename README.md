@@ -20,6 +20,6 @@
 |`--output_dir`         | "audio"         | Output directory to save audio files recorded by audioWhisper.py                                       |
 
 ## License
-see [LICENSE](lICENSE)
+see [LICENSE](LICENSE)
 
 

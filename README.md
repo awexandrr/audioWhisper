@@ -15,11 +15,11 @@
 |`--device_index`       |  2              | Choose the output device to listen to and transcribe the audio from this device                        |
 |`--channel`            |  2              | Number of channels of the output device                                                                |
 |`--rate`               | 44100           | Sampling rate of the output device                                                                     |
-|'--audioseconds`       | 5               | Length of audio files to record                                                                        |
+|`--audioseconds`       | 5               | Length of audio files to record                                                                        |
 |`--audiocounts`        | 5               | Number of audio files to save into path                                                                |
 |`--output_dir`         | "audio"         | Output directory to save audio files recorded by audioWhisper.py                                       |
 
 ## License
-see [LICENSE](license.md)
+see [LICENSE](lICENSE)
 
 

@@ -12,3 +12,4 @@
     `python audioWhisper.py --model small.en`
 2. Task:
     `python audioWhisper.py --task translate`
+3. audio 

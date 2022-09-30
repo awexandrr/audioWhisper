@@ -7,10 +7,10 @@
 4. run `python audioWhisper.py`
 
 ## Command-line flags
-|      --flags   |      parameters   |      description                          |
-|:--------------:|:-----------------:|:-----------------------------------------:|
-|`--devices`     |  true, false     |       To print all available devices      |
-|`--model`       |  model name       |      Select model list. refer [here](https://github.com/openai/whisper#available-models-and-languages)      |
-|`--task`        |  transcribe, translate       |                                          |
-|`--device_index`|                   |                                          |
+|      --flags   |      Parameters         |  Default Value  |      Description                                                                                       |
+|:--------------:|:-----------------------:|:---------------:|:------------------------------------------------------------------------------------------------------:|
+|`--devices`     |  true, false            |  false          | To print all available devices                                                                         |
+|`--model`       |  model name             |  small          | Select model list. refer [here](https://github.com/openai/whisper#available-models-and-languages)      |
+|`--task`        |  transcribe, translate  |  transcribe     | Choose between transcribe the audio or to translate the audio to English                               |
+|`--device_index`| index of output device  |  2              | Choose the output device to listen to and transcribe the audio from this device                        |
 

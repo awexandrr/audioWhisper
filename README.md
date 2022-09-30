@@ -1,5 +1,5 @@
 # audioWhisper
-Listen to any audio stream on your machine and print out the transcribed or translated audio. 
+Listen to any audio stream on your machine and print out the transcribed or translated audio. Based on OpenAI's [Whisper](https://github.com/openai/whisper) project. 
 
 ## Setup
 

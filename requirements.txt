@@ -1,0 +1,10 @@
+sounddevice
+scipy
+numpy
+tqdm
+more-itertools
+transformers>=4.19.0
+ffmpeg-python==0.2.0
+git+https://github.com/openai/whisper.git
+--extra-index-url https://download.pytorch.org/whl/cu113
+torch

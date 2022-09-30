@@ -25,10 +25,13 @@ The performance of the transcribing and translating the audio are depending on y
 
 ## Performance Test on Intel i5-8265U without CUDA
 On default settings, using `small` model and transcribing `5 seconds of audio files took 1 minute(s) 30 second(s)` to complete.
+
 **Task Manager**
 <img src="https://raw.githubusercontent.com/Awexander/audioWhisper/main/screenshots/taskmanager%20(i5-8265u%20without%20cuda).png">
+
 **Terminal**
 <img src="https://raw.githubusercontent.com/Awexander/audioWhisper/main/screenshots/running%20time%20(i5-8265u%20without%20cuda).png">
+
 ## License
 The code and the model weights of Whisper are released under the MIT License. See their [repo](https://github.com/openai/whisper#license) for more information.
 The code of this repo is under MIT License. See [LICENSE](LICENSE) for further details.

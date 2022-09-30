@@ -24,8 +24,8 @@ Listen to any audio stream on your machine and print out the transcribed or tran
 The performance of the transcribing and translating the audio are depends on your machine's performance. 
 
 ## Performance Test on Intel i5-8265U without CUDA
-[Terminal](screenshots/running time (i5-8265u without cuda).png)
-[Task Manager] (screenshots/taskmanager (i5-8265u without cuda).png)
+[Terminal](running time (i5-8265u without cuda).png)
+[Task Manager](taskmanager (i5-8265u without cuda).png)
 
 ## License
 The code and the model weights of Whisper are released under the MIT License. See their [repo](https://github.com/openai/whisper#license) for more information.

@@ -8,6 +8,6 @@
 
 ## Command-line flags
 
-1. Model name 
+1. Model name \n
 ```python audioWhisper.py --model small.en```
 2. 

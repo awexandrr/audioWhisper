@@ -2,6 +2,9 @@
 Listen to any audio stream on your machine and print out the transcribed or translated audio. 
 
 ## Setup
+
+[**you need to turn on stereo mix settings on windows first before running the script**](https://www.howtogeek.com/howto/39532/how-to-enable-stereo-mix-in-windows-7-to-record-audio/)
+
 1. choose envs of your choices.
 2. clone this repo into your local storage.
 3. run `pip install -r requirements.txt`

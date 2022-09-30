@@ -7,10 +7,12 @@ Listen to any audio stream on your machine and print out the transcribed or tran
 
 1. choose envs of your choices.
 2. clone this repo into your local storage.
-3. run `pip install -r requirements.txt`
-4. run `python audioWhisper.py --devices true` to get `device_index` and `channel`
+3. run ```pip install -r requirements.txt```
+4. run ```python audioWhisper.py --devices true``` to get `device_index` and `channel`
 <img src="https://raw.githubusercontent.com/Awexander/audioWhisper/main/screenshots/--deviceslist.png">
-6. run `python audioWhisper.py`
+6. run 
+
+```python audioWhisper.py```
 
 ## Command-line flags
 |      --flags          |  Default Value  |      Description                                                                                       |

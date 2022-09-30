@@ -7,11 +7,9 @@
 4. run `python audioWhisper.py`
 
 ## Command-line flags
-
-1. Model name:   
-
-    `python audioWhisper.py --model small.en`
-2. Task:
-
-    `python audioWhisper.py --task translate`
-3. audio 
+--------------------------------------------------------------------------------------
+|    `--devices`     |       bool        |       to print all available devices      |
+|    `--model`       |      str          |      select model list. refer [here](https://github.com/openai/whisper)      |
+|    `--task`        |                   |                                          |
+|    `--             |                   |                                          |
+-------------------------------------------------------------------------------------

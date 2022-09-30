@@ -7,9 +7,10 @@
 4. run `python audioWhisper.py`
 
 ## Command-line flags
+|      --flags       |      parameters   |      description                          |
 |:------------------:|:-----------------:|:-----------------------------------------:|
 |    `--devices`     |       bool        |       to print all available devices      |
-|    `--model`       |      str          |      select model list. refer [here](https://github.com/openai/whisper)      |
+|    `--model`       |      str          |      select model list. refer [here]([https://github.com/openai/whisper](https://github.com/openai/whisper#available-models-and-languages))      |
 |    `--task`        |                   |                                          |
-|    `--device_index`             |                   |                                          |
+|    `--device_index`|                   |                                          |
 

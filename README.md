@@ -20,6 +20,7 @@
 |`--output_dir`         | "audio"         | Output directory to save audio files recorded by audioWhisper.py                                       |
 
 ## License
-see [LICENSE](LICENSE)
+The code and the model weights of Whisper are released under the MIT License. See their [repo](https://github.com/openai/whisper#license) for more information.
+The code of this repo is under MIT License. See [LICENSE](LICENSE) for further details.
 
 

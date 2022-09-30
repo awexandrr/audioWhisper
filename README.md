@@ -8,7 +8,7 @@
 
 ## Command-line flags
 
-1. Model name   
-  `python audioWhisper.py --model small.en`
+1. Model name:   
+    `python audioWhisper.py --model small.en`
 2. Task:
-  `python audioWhisper.py --task translate`
+    `python audioWhisper.py --task translate`

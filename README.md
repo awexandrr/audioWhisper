@@ -9,10 +9,9 @@ Listen to any audio stream on your machine and print out the transcribed or tran
 2. clone this repo into your local storage.
 3. run ```pip install -r requirements.txt```
 4. run ```python audioWhisper.py --devices true``` to get `device_index` and `channel`
-<img src="https://raw.githubusercontent.com/Awexander/audioWhisper/main/screenshots/--deviceslist.png">
-6. run 
+5. run ```python audioWhisper.py ```. Make sure to choose stereo mix output device.
 
-```python audioWhisper.py```
+<img src="https://raw.githubusercontent.com/Awexander/audioWhisper/main/screenshots/--deviceslist.png">
 
 ## Command-line flags
 |      --flags          |  Default Value  |      Description                                                                                       |

@@ -9,8 +9,8 @@
 ## Command-line flags
 |      --flags   |      parameters   |      description                          |
 |:--------------:|:-----------------:|:-----------------------------------------:|
-|`--devices`     |       bool        |       To print all available devices      |
-|`--model`       |      str          |      Select model list. refer [here](https://github.com/openai/whisper#available-models-and-languages)      |
-|`--task`        |                   |                                          |
+|`--devices`     |  true | false     |       To print all available devices      |
+|`--model`       |  model name       |      Select model list. refer [here](https://github.com/openai/whisper#available-models-and-languages)      |
+|`--task`        |  transcribe | translate       |                                          |
 |`--device_index`|                   |                                          |
 

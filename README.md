@@ -10,7 +10,7 @@
 |      --flags       |      parameters   |      description                          |
 |:------------------:|:-----------------:|:-----------------------------------------:|
 |    `--devices`     |       bool        |       to print all available devices      |
-|    `--model`       |      str          |      select model list. refer [here]([https://github.com/openai/whisper](https://github.com/openai/whisper#available-models-and-languages))      |
+|    `--model`       |      str          |      select model list. refer [here]([https://github.com/openai/whisper](https://github.com/openai/whisper#available-models-and-languages)      |
 |    `--task`        |                   |                                          |
 |    `--device_index`|                   |                                          |
 

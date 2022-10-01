@@ -43,35 +43,35 @@ def main():
 
     index = 0
 
-    while True:
-        print("recording...")
-        recording = sd.rec(frames=rate*seconds, samplerate = rate, channels=channel, dtype=np.float32)
-        if index == 0:
-            indexPath = audio_counts
-        else:
-            indexPath = index - 1
+     while True:
+            #print("recording...")
+            recording = sd.rec(frames=rate*seconds, samplerate = rate, channels=channel, dtype=np.float32)
+            if index == 0:
+                indexPath = audio_counts
+            else:
+                indexPath = index - 1
 
-        try:
-            print("transcribing...")
-            prevTime = time.now()
-            result = audio_model.transcribe(f"{output_dir}/audio{indexPath}.wav", 
-                                            task=task, 
-                                            no_speech_threshold=0.6, 
-                                            compression_ratio_threshold=2.4,
-                                            language=language)
+            try:
+                #print("transcribing...")
+                prevTime = time.now()
+                result = audio_model.transcribe(f"{output_dir}/audio{indexPath}.wav", 
+                                                task=task, 
+                                                no_speech_threshold=0.6, 
+                                                compression_ratio_threshold=2.0,
+                                                language=language)
 
-            translatedText = result.get('text')
-            print('\n', translatedText)
-        except:
-            print("no audio track recorded yet")
-            
-        print(f"time taken to transcribe: {time.now() - prevTime}")
-        sd.wait()
-        wavfile.write(f"{output_dir}/audio{index}.wav", rate=rate, data=recording)
+                translatedText = result.get('text')
+                print(f'\n {task}d text:', translatedText)
+            except:
+                print("no audio track recorded yet")
 
-        index += 1
-        if index > audio_counts:
-            index = 0
+            print(f"time: {time.now() - prevTime}")
+            sd.wait()
+            wavfile.write(f"{output_dir}/audio{index}.wav", rate=rate, data=recording)
+
+            index += 1
+            if index > audio_counts:
+                index = 0
 
 def str2bool(string):
     str2val = {"true": True, "false": False}

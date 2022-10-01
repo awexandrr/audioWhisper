@@ -1,15 +1,18 @@
 # audioWhisper
 Listen to any audio stream on your machine and print out the transcribed or translated audio. Based on OpenAI's [Whisper](https://github.com/openai/whisper) project. 
 
-## Setup
+## Prerequisites
 
-[**you need to turn on stereo mix settings on windows first before running the script**](https://www.howtogeek.com/howto/39532/how-to-enable-stereo-mix-in-windows-7-to-record-audio/)
+1. [**Turn on stereo mix settings on windows first before running the script**](https://www.howtogeek.com/howto/39532/how-to-enable-stereo-mix-in-windows-7-to-record-audio/)
+2. [**Install and add ffmpeg to your PATH**](https://www.thewindowsclub.com/how-to-install-ffmpeg-on-windows-10#:~:text=Click%20New%20and%20type%20the,Click%20OK%20to%20apply%20changes.)
+3. [**Install CUDA to your system**](https://developer.nvidia.com/cuda-downloads) 
+## Setup
 
 1. choose envs of your choices.
 2. clone this repo into your local storage.
 3. run ```pip install -r requirements.txt```
 4. run ```python audioWhisper.py --devices true``` to get `device_index` and `channel`
-5. run ```python audioWhisper.py ```. Make sure to choose stereo mix output device.
+5. run ```python audioWhisper.py ```. Make sure to define the index of `Stereo Mix` output device if it is not `2`.
 
 <img src="https://raw.githubusercontent.com/Awexander/audioWhisper/main/screenshots/--deviceslist.png">
 
@@ -29,14 +32,9 @@ Listen to any audio stream on your machine and print out the transcribed or tran
 ## Disclaimer
 The performance of the transcribing and translating the audio are depending on your machine's performance. 
 
-## Performance Test on Intel i5-8265U without CUDA
-On default settings, using `small` model and transcribing `5 seconds audio files took 1 minute(s) 30 second(s)` to complete.
+## Performance Test on Ryzen 5 5600G with NVIDIA RTX3060
+The translated audio is not perfect but it can still translate the point of the talk from audio. Video demo for this app is on [youtube](https://youtu.be/8n_KKEST1gg).
 
-**Task Manager**
-<img src="https://raw.githubusercontent.com/Awexander/audioWhisper/main/screenshots/taskmanager%20(i5-8265u%20without%20cuda).png">
-
-**Terminal**
-<img src="https://raw.githubusercontent.com/Awexander/audioWhisper/main/screenshots/running%20time%20(i5-8265u%20without%20cuda).png">
 
 ## License
 The code and the model weights of Whisper are released under the MIT License. See their [repo](https://github.com/openai/whisper#license) for more information.

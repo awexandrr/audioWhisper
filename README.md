@@ -25,12 +25,15 @@ Listen to any audio stream on your machine and print out the transcribed or tran
 |`--device_index`       | 2               | Choose the output device to listen to and transcribe the audio from this device                        |
 |`--channel`            | 2               | Number of channels of the output device                                                                |
 |`--rate`               | 44100           | Sampling rate of the output device                                                                     |
-|`--audioseconds`       | 5               | Length of audio files to record                                                                        |
+|`--audioseconds`       | 5               | Length of audio files to record (seconds)                                                              |
 |`--audiocounts`        | 5               | Number of audio files to save into path                                                                |
 |`--output_dir`         | "audio"         | Output directory to save audio files recorded by audioWhisper.py                                       |
 
-## Disclaimer
-The performance of the transcribing and translating the audio are depending on your machine's performance. 
+## Bugs and Fixes
+The performance of the transcribing and translating the audio are depending on your machine's performance and model you used. `medium` or `large` models could give more accurate and make sense translation while tiny and small is good enough for transcribing the english audio. 
+
+1. Make sure the playback device of your machine is the same with `Stereo Mix` device before you run the script. 
+<img src=https://raw.githubusercontent.com/Awexander/audioWhisper/main/screenshots/stereomix.png>
 
 ## Performance Test on Ryzen 5 5600G with NVIDIA RTX3060
 The translated audio is not perfect but it can still translate the point of the talk from audio. Video demo for this app is on [youtube](https://youtu.be/8n_KKEST1gg).

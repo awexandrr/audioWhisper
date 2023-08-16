@@ -43,4 +43,9 @@ The translated audio is not perfect but it can still translate the point of the 
 The code and the model weights of Whisper are released under the MIT License. See their [repo](https://github.com/openai/whisper#license) for more information.
 The code of this repo is under MIT License. See [LICENSE](LICENSE) for further details.
 
+## Example
+```python audioWhisper.py --devices true```
+It will return the list of devices with their IDs that can be used 
 
+```python audioWhisper.py --device_index 6 --model small.en```
+Executing the script with device ID of 6 and model name being "small.en"
